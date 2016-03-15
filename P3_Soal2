@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+void main ()
+{
+	float panjang;
+	float lebar;
+	float jari_jari;
+	float luas_segiempat;
+	float luas_setlingkaran;
+	float luas_total;
+
+	cout << "Menghitung Luas Bangun Datar " <<endl;
+	cout << "panjang : ";
+	cin >> panjang;
+	cout << "lebar : ";
+	cin >> lebar;
+	cout << "jari_jari : ";
+	cin >> jari_jari;
+
+	luas_segiempat = panjang*lebar;
+	luas_setlingkaran = ( 3.14*jari_jari*jari_jari)/2;
+	luas_total = luas_segiempat + luas_setlingkaran;
+
+	cout << "Luas segi empat : "<<luas_segiempat<<endl;
+	cout << "Luas setengah lingkaran : "<<luas_setlingkaran<<endl;
+	cout << "Luas bangun datar : "<<luas_total<<endl;
+
+	system("pause");
+
+}
